@@ -4,41 +4,49 @@ class Cantidate:
     political_party=''
     vote=0
     id=0
+    persona=''
 
     ##fin atributos##
     ##metodos##
-    def __init__(self,id,name,political_party,votes):
+    def __init__(self,id,name,political_party,votes,persona):
         self.id=id ##TODO que setee autoincrementble
         self.name=name
         self.vote=vote
         self.political_party=political_party
+        self.persona=persona
 
     def suma_votes(self):
         self.vote=vote+1
 
     ##fin metodos##
 
-name=''
-political_party=''
-vote=0
-id=0   
-
 list = []
 list2 = []
+list3 = []
+list4 = []
 tamano=2
 
-
 for x in range(tamano):
-    print("ingrese los datos de la persona",x+1)
-    name=input("nombre: ")
+    print("ingrese los datos del candidato",x+1)
+    name=input("nombre politico: ")
     political_party=input("partido politico: ")
     
     list.append(name)
     list2.append(political_party)
+    
+for x in range(tamano):
+    print(x+1,".",list[x],list2[x])
+
+for x in range(tamano):
+    print("ingrese los datos de la persona")
+    persona=input("nombre: ")
+    vote=input("voto(1-2): ")
+
+    list3.append(persona)
+    list4.append(vote)
 
     
 for x in range(tamano):
-    print("datos de la persona",x+1)
-    print("nombre: ",list[x])
-    print("partido: ",list2[x])
+    print("persona",list3[x])
+    print("voto:" ,list4[x])
 
