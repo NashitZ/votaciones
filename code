@@ -50,3 +50,13 @@ for x in range(tamano):
     print("persona",list3[x])
     print("voto:" ,list4[x])
 
+
+#for x in range(tamano):
+    #if (list4[x]==1):
+     #   vote=vote+1
+    #elif (list4[x]==2):
+     #   vote2=vote2+1
+    #else:
+     #   vote=vote-1
+        
+    #print("votos de:",list[x],":",vote)
