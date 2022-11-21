@@ -7,7 +7,7 @@ class Cantidate:
 
     ##fin atributos##
     ##metodos##
-    def __init__(self,id,names,political_party,votes):
+    def __init__(self,id,name,political_party,votes):
         self.id=id ##TODO que setee autoincrementble
         self.name=name
         self.vote=vote
@@ -24,8 +24,21 @@ vote=0
 id=0   
 
 list = []
-list.append( candidate("nombre1","partido politico",))
+list2 = []
+tamano=2
 
-name=input("Ingrese el nombre del candidato: ")
-political_party=input("ingrese el nombre del partido politico: ")
+
+for x in range(tamano):
+    print("ingrese los datos de la persona",x+1)
+    name=input("nombre: ")
+    political_party=input("partido politico: ")
+    
+    list.append(name)
+    list2.append(political_party)
+
+    
+for x in range(tamano):
+    print("datos de la persona",x+1)
+    print("nombre: ",list[x])
+    print("partido: ",list2[x])
 
